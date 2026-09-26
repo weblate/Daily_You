@@ -674,75 +674,77 @@ class AppLocalizationsEs extends AppLocalizations {
       '¡No se pudo cambiar la carpeta de imágenes!';
 
   @override
-  String get backupErrorDescription => '¡Error al intentar crear un resplado!';
+  String get backupErrorDescription => '¡Error al intentar crear un respaldo!';
 
   @override
   String get restoreErrorDescription => '¡Error en restaurar respaldo!';
 
   @override
-  String get settingsBackupRestoreTitle => 'Respaldo y Restauracion';
+  String get settingsBackupRestoreTitle => 'Respaldo y Restauración';
 
   @override
   String get settingsBackup => 'Respaldo';
 
   @override
-  String get settingsRestore => 'Restauracion';
+  String get settingsRestore => 'Restauración';
 
   @override
   String get settingsRestorePromptDescription =>
-      '¡Restaurar un respaldo hara sobreescritura en tus datos ya existente!';
+      '¡Restaurar un respaldo sobreescribirá tus datos existentes!';
 
   @override
-  String get settingsBackupPasswordProtect => 'Password Protect Backups';
+  String get settingsBackupPasswordProtect =>
+      'Proteger respaldos con contraseña';
 
   @override
-  String get backupEncryptedTitle => 'Encrypted Backup';
+  String get backupEncryptedTitle => 'Respaldo encriptado';
 
   @override
-  String get backupEncryptedContent => 'This backup is password protected.';
+  String get backupEncryptedContent =>
+      'Este respaldo está protegido por una contraseña.';
 
   @override
-  String get settingsAutoBackup => 'Automatic Backups';
+  String get settingsAutoBackup => 'Respaldos automáticos';
 
   @override
-  String get settingsAutoBackupLocation => 'Backup Location';
+  String get settingsAutoBackupLocation => 'Ubicación del respaldo';
 
   @override
-  String get settingsAutoBackupInterval => 'Backup Interval';
+  String get settingsAutoBackupInterval => 'Frecuencia de los respaldos';
 
   @override
-  String get settingsAutoBackupIntervalDaily => 'Daily';
+  String get settingsAutoBackupIntervalDaily => 'Diario';
 
   @override
-  String get settingsAutoBackupIntervalWeekly => 'Weekly';
+  String get settingsAutoBackupIntervalWeekly => 'Semanal';
 
   @override
-  String get settingsAutoBackupIntervalMonthly => 'Monthly';
+  String get settingsAutoBackupIntervalMonthly => 'Mensual';
 
   @override
-  String get settingsAutoBackupMaxCount => 'Backups To Keep';
+  String get settingsAutoBackupMaxCount => 'Nº de respaldos a mantener';
 
   @override
   String get settingsAutoBackupRequireCharging => 'Only While Charging';
 
   @override
   String settingsBackupLast(Object time) {
-    return 'Last backup $time';
+    return 'Último respaldo $time';
   }
 
   @override
-  String get settingsBackupNever => 'Never backed up';
+  String get settingsBackupNever => 'Nunca se ha respaldado';
 
   @override
   String settingsAutoBackupNext(Object time) {
-    return 'Next backup $time';
+    return 'Próximo respaldo $time';
   }
 
   @override
-  String get settingsAutoBackupKeepAll => 'All';
+  String get settingsAutoBackupKeepAll => 'Todo';
 
   @override
-  String get autoBackupFailedTitle => 'Backup Failed';
+  String get autoBackupFailedTitle => 'Respaldo fallido';
 
   @override
   String tranferStatus(Object percent) {
@@ -797,11 +799,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsImport => 'Importar';
 
   @override
-  String get settingsImportFromAnotherApp => 'Importar de otra aplicacion';
+  String get settingsImportFromAnotherApp => 'Importar de otra aplicación';
 
   @override
   String get settingsTranslateCallToAction =>
-      'Todos deberian tener acceso a el diario!';
+      '¡Todos deberían tener acceso a un diario!';
 
   @override
   String get settingsHelpTranslate => 'Ayuda a traducir';
@@ -844,7 +846,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get formatPixels => 'Pixels';
 
   @override
-  String get formatMarkdown => 'Reduccion';
+  String get formatMarkdown => 'Markdown';
 
   @override
   String get settingsDeleteAllLogsTitle => 'Eliminar Todos los Registros';
@@ -924,7 +926,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsSourceCode => 'Código Fuente';
 
   @override
-  String get settingsOpenSourceLicenses => 'Open Source Licenses';
+  String get settingsOpenSourceLicenses => 'Licencias de código abierto';
 
   @override
   String get settingsMadeWithLove => 'Hecho con 💚';

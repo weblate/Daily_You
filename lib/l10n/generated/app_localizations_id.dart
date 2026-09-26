@@ -637,7 +637,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsImageQuality => 'Kualitas Gambar';
 
   @override
-  String get imageQualityHigh => 'Gede';
+  String get imageQualityHigh => 'Tinggi';
 
   @override
   String get imageQualityMedium => 'Sedang';

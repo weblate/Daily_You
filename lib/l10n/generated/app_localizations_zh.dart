@@ -1622,6 +1622,55 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get settingsRestorePromptDescription => '還原備份將覆蓋您現有的資料！';
 
   @override
+  String get settingsBackupPasswordProtect => '密碼保護備份';
+
+  @override
+  String get backupEncryptedTitle => '加密備份';
+
+  @override
+  String get backupEncryptedContent => '此備份受密碼保護。';
+
+  @override
+  String get settingsAutoBackup => '自動備份';
+
+  @override
+  String get settingsAutoBackupLocation => '備份位置';
+
+  @override
+  String get settingsAutoBackupInterval => '備份間隔';
+
+  @override
+  String get settingsAutoBackupIntervalDaily => '每日';
+
+  @override
+  String get settingsAutoBackupIntervalWeekly => '每週';
+
+  @override
+  String get settingsAutoBackupIntervalMonthly => '每月';
+
+  @override
+  String get settingsAutoBackupMaxCount => '要保留的備份';
+
+  @override
+  String settingsBackupLast(Object time) {
+    return '上次備份 $time';
+  }
+
+  @override
+  String get settingsBackupNever => '從未備份過';
+
+  @override
+  String settingsAutoBackupNext(Object time) {
+    return '下次備份 $time';
+  }
+
+  @override
+  String get settingsAutoBackupKeepAll => '全部';
+
+  @override
+  String get autoBackupFailedTitle => '備份失敗';
+
+  @override
   String tranferStatus(Object percent) {
     return '正在轉移… $percent%';
   }
@@ -1766,6 +1815,9 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get settingsSourceCode => '原始碼';
+
+  @override
+  String get settingsOpenSourceLicenses => '開源授權條款';
 
   @override
   String get settingsMadeWithLove => '用❤️製作';

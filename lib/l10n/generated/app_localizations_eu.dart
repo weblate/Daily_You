@@ -4,165 +4,211 @@ import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
 
-/// The translations for Malay (`ms`).
-class AppLocalizationsMs extends AppLocalizations {
-  AppLocalizationsMs([String locale = 'ms']) : super(locale);
+/// The translations for Basque (`eu`).
+class AppLocalizationsEu extends AppLocalizations {
+  AppLocalizationsEu([String locale = 'eu']) : super(locale);
 
   @override
   String get appTitle => 'Daily You';
 
   @override
-  String get dailyReminderTitle => 'Log hari ini!';
+  String get dailyReminderTitle => 'Log Today!';
 
   @override
-  String get dailyReminderDescription => 'Ambil log harian anda…';
+  String get dailyReminderDescription => 'Take your daily log…';
 
   @override
-  String get actionTakePhoto => 'Ambil gambar';
+  String get actionTakePhoto => 'Take photo';
 
   @override
-  String get actionToday => 'Hari ini';
+  String get actionToday => 'Today';
 
   @override
-  String get actionOtherDay => 'Hari lain';
+  String get actionOtherDay => 'Other day';
 
   @override
-  String get pageHomeTitle => 'Utama';
+  String get pageHomeTitle => 'Home';
 
   @override
-  String get jumpToMonthTitle => 'Langkau ke bulan';
+  String get jumpToMonthTitle => 'Jump to month';
 
   @override
-  String get jumpToLogTitle => 'Langkau ke log';
+  String get jumpToLogTitle => 'Jump to log';
 
   @override
-  String get flashbacksTitle => 'Imbas kembali';
+  String get flashbacksTitle => 'Flashbacks';
 
   @override
-  String get settingsFlashbacksExcludeBadDays => 'Kecualikan hari-hari buruk';
+  String get settingsFlashbacksExcludeBadDays => 'Exclude bad days';
 
   @override
-  String get flaskbacksEmpty => 'Belum ada imbas semula…';
+  String get flaskbacksEmpty => 'No Flashbacks Yet…';
 
   @override
-  String get flashbackGoodDay => 'Hari yang baik';
+  String get flashbackGoodDay => 'A Good Day';
 
   @override
-  String get flashbackRandomDay => 'Hari yang rawak';
+  String get flashbackRandomDay => 'A Random Day';
 
   @override
   String flashbackWeek(num count) {
-    return '$count Minggu Lepas';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Weeks Ago',
+      one: '$count Week Ago',
+    );
+    return '$_temp0';
   }
 
   @override
   String flashbackMonth(num count) {
-    return '$count Bulan Lepas';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Months Ago',
+      one: '$count Month Ago',
+    );
+    return '$_temp0';
   }
 
   @override
   String flashbackYear(num count) {
-    return '$count Tahun Lepas';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Years Ago',
+      one: '$count Year Ago',
+    );
+    return '$_temp0';
   }
 
   @override
-  String get flashbackOnThisDay => 'Pada Hari Ini';
+  String get flashbackOnThisDay => 'On This Day';
 
   @override
-  String get pageGalleryTitle => 'Galeri';
+  String get pageGalleryTitle => 'Gallery';
 
   @override
-  String get searchLogsHint => 'Log carian…';
+  String get searchLogsHint => 'Search Logs…';
 
   @override
   String logCount(num count) {
-    return '$count log';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count logs',
+      one: '$count log',
+    );
+    return '$_temp0';
   }
 
   @override
   String dayCount(num count) {
-    return '$count hari';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '$count day',
+    );
+    return '$_temp0';
   }
 
   @override
   String wordCount(num count) {
-    return '$count perkataan';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count words',
+      one: '$count word',
+    );
+    return '$_temp0';
   }
 
   @override
-  String get noLogs => 'Tiada log…';
+  String get noLogs => 'No Logs…';
 
   @override
-  String get noResults => 'Tiada hasil…';
+  String get noResults => 'No Results…';
 
   @override
-  String get sortDateTitle => 'Tarikh';
+  String get sortDateTitle => 'Date';
 
   @override
-  String get sortOrderAscendingTitle => 'Menaik';
+  String get sortOrderAscendingTitle => 'Ascending';
 
   @override
-  String get sortOrderDescendingTitle => 'Menurun';
+  String get sortOrderDescendingTitle => 'Descending';
 
   @override
-  String get pageStatisticsTitle => 'Statistik';
+  String get pageStatisticsTitle => 'Statistics';
 
   @override
-  String get statisticsNotEnoughData => 'Tidak cukup data…';
+  String get statisticsNotEnoughData => 'Not enough data…';
 
   @override
-  String get statisticsRangeOneMonth => '1 Bulan';
+  String get statisticsRangeOneMonth => '1 Month';
 
   @override
-  String get statisticsRangeSixMonths => '6 Bulan';
+  String get statisticsRangeSixMonths => '6 Months';
 
   @override
-  String get statisticsRangeOneYear => '1 Tahun';
+  String get statisticsRangeOneYear => '1 Year';
 
   @override
-  String get statisticsRangeAllTime => 'Setiap Masa';
+  String get statisticsRangeAllTime => 'All Time';
 
   @override
   String chartSummaryTitle(Object tag) {
-    return '$tag Ringkasan';
+    return '$tag Summary';
   }
 
   @override
   String chartByDayTitle(Object tag) {
-    return '$tag Per Hari';
+    return '$tag By Day';
   }
 
   @override
   String chartOverTimeTitle(Object tag) {
-    return '$tag Dari Semasa Ke Semasa';
+    return '$tag Over Time';
   }
 
   @override
-  String get chartGroupingLabel => 'Kumpulkan dengan';
+  String get chartGroupingLabel => 'Group by';
 
   @override
-  String get chartGroupingDay => 'Hari';
+  String get chartGroupingDay => 'Day';
 
   @override
-  String get chartGroupingWeek => 'Minggu';
+  String get chartGroupingWeek => 'Week';
 
   @override
-  String get chartGroupingMonth => 'Bulan';
+  String get chartGroupingMonth => 'Month';
 
   @override
-  String get chartGroupingYear => 'Tahun';
+  String get chartGroupingYear => 'Year';
 
   @override
   String get chartSmoothingLabel => 'Smoothing';
 
   @override
   String streakCurrent(num count) {
-    return 'Rentetan Semasa $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Current Streak $count',
+    );
+    return '$_temp0';
   }
 
   @override
   String streakLongest(num count) {
-    return 'Rentetan Terpanjang $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Longest Streak $count',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -177,20 +223,25 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String streakSinceBadDay(num count) {
-    return 'Hari Semenjak Hari Yang Buruk $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Days Since a Bad Day $count',
+    );
+    return '$_temp0';
   }
 
   @override
   String get errorExternalStorageAccessTitle =>
-      'Tidak Dapat Mengakses Storan Luaran';
+      'Can\'t Access External Storage';
 
   @override
   String get errorExternalStorageAccessDescription =>
-      'Jika anda menggunakan storan rangkaian, pastikan perkhidmatan tersebut dalam talian dan anda mempunyai akses rangkaian.\n\nJika tidak, aplikasi mungkin akan kehilangan kebenaran untuk folder luaran. Pergi ke tetapan dan pilih semula folder luaran untuk memberikan akses.\n\nAmaran, perubahan tidak akan disegerakkan sehingga anda memulihkan akses ke lokasi storan luaran!';
+      'If you are using network storage make sure the service is online and you have network access.\n\nOtherwise, the app may have lost permissions for the external folder. Go to settings, and reselect the external folder to grant access.\n\nWarning, changes will not be synced until you restore access to the external storage location!';
 
   @override
   String get errorExternalStorageAccessContinue =>
-      'Teruskan Dengan Pangkalan Data Tempatan';
+      'Continue With Local Database';
 
   @override
   String get databaseMigrationErrorTitle => 'Couldn\'t Move Your Data';
@@ -206,52 +257,52 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorReport => 'Report Issue';
 
   @override
-  String get lastModified => 'Diubah suai';
+  String get lastModified => 'Modified';
 
   @override
-  String get writeSomethingHint => 'Tulis sesuatu…';
+  String get writeSomethingHint => 'Write something…';
 
   @override
-  String get titleHint => 'Tajuk…';
+  String get titleHint => 'Title…';
 
   @override
-  String get deleteLogTitle => 'Padam Log';
+  String get deleteLogTitle => 'Delete Log';
 
   @override
-  String get deleteLogDescription => 'Adakah anda ingin memadam log ini?';
+  String get deleteLogDescription => 'Do you want to delete this log?';
 
   @override
-  String get deletePhotoTitle => 'Padam Foto';
+  String get deletePhotoTitle => 'Delete Photo';
 
   @override
-  String get deletePhotoDescription => 'Adakah anda ingin memadam foto ini?';
+  String get deletePhotoDescription => 'Do you want to delete this photo?';
 
   @override
-  String get pageSettingsTitle => 'Tetapan';
+  String get pageSettingsTitle => 'Settings';
 
   @override
-  String get settingsAppearanceTitle => 'Penampilan';
+  String get settingsAppearanceTitle => 'Appearance';
 
   @override
-  String get settingsTheme => 'Tema';
+  String get settingsTheme => 'Theme';
 
   @override
-  String get themeSystem => 'Sistem';
+  String get themeSystem => 'System';
 
   @override
-  String get themeLight => 'Terang';
+  String get themeLight => 'Light';
 
   @override
-  String get themeDark => 'Gelap';
+  String get themeDark => 'Dark';
 
   @override
   String get themeAmoled => 'AMOLED';
 
   @override
-  String get settingsFirstDayOfWeek => 'Hari Pertama Dalam Seminggu';
+  String get settingsFirstDayOfWeek => 'First Day Of Week';
 
   @override
-  String get settingsCalendarSystem => 'Sistem Kalendar';
+  String get settingsCalendarSystem => 'Calendar System';
 
   @override
   String get calendarSystemGregorian => 'Gregorian';
@@ -260,111 +311,110 @@ class AppLocalizationsMs extends AppLocalizations {
   String get calendarSystemJalali => 'Jalali';
 
   @override
-  String get settingsUseSystemAccentColor => 'Gunakan Warna Tema Sistem';
+  String get settingsUseSystemAccentColor => 'Use System Accent Color';
 
   @override
-  String get settingsCustomAccentColor => 'Warna Tema Tersuai';
+  String get settingsCustomAccentColor => 'Custom Accent Color';
 
   @override
   String get settingsShowMarkdownToolbar => 'Show Markdown Toolbar';
 
   @override
-  String get settingsShowFlashbacks => 'Tunjukkan Imbasan Semula';
+  String get settingsShowFlashbacks => 'Show Flashbacks';
 
   @override
-  String get settingsChangeMoodIcons => 'Tukar Ikon Emosi';
+  String get settingsChangeMoodIcons => 'Change Mood Icons';
 
   @override
-  String get moodIconPrompt => 'Masukkan Ikon';
+  String get moodIconPrompt => 'Enter an icon';
 
   @override
   String get settingsFlashbacksViewLayout => 'Flashbacks View Layout';
 
   @override
-  String get settingsGalleryViewLayout => 'Susun Atur Paparan Galeri';
+  String get settingsGalleryViewLayout => 'Gallery View Layout';
 
   @override
-  String get settingsHideImagesInGallery => 'Sembunyikan Imej Dalam Galeri';
+  String get settingsHideImagesInGallery => 'Hide Images In Gallery';
 
   @override
-  String get settingsHideImages => 'Sembunyikan Imej';
+  String get settingsHideImages => 'Hide Images';
 
   @override
-  String get pageCalendarTitle => 'Kalendar';
+  String get pageCalendarTitle => 'Calendar';
 
   @override
-  String get viewLayoutList => 'Senarai';
+  String get viewLayoutList => 'List';
 
   @override
   String get viewLayoutGrid => 'Grid';
 
   @override
-  String get settingsNotificationsTitle => 'Pemberitahuan';
+  String get settingsNotificationsTitle => 'Notifications';
 
   @override
   String get settingsDailyReminderOnboarding =>
-      'Dayakan peringatan harian untuk memastikan diri anda konsisten!';
+      'Enable daily reminders to keep yourself consistent!';
 
   @override
   String get settingsNotificationsPermissionsPrompt =>
-      'Kebenaran \'jadualkan penggera\' akan diminta untuk menghantar peringatan pada waktu tertentu atau pada waktu pilihan anda.';
+      'The \'schedule alarms\' permission will be requested to send the reminder at a random moment or at your preferred time.';
 
   @override
-  String get settingsDailyReminderTitle => 'Peringatan Harian';
+  String get settingsDailyReminderTitle => 'Daily Reminder';
 
   @override
-  String get settingsOnThisDayDescription => 'Imbas kembali memori lama';
+  String get settingsOnThisDayDescription => 'Revisit past memories';
 
   @override
-  String get settingsDailyReminderDescription =>
-      'Peringatan lembut setiap hari';
+  String get settingsDailyReminderDescription => 'A gentle reminder each day';
 
   @override
-  String get settingsReminderTime => 'Masa Peringatan';
+  String get settingsReminderTime => 'Reminder Time';
 
   @override
-  String get settingsFixedReminderTimeTitle => 'Masa Peringatan Tetap';
+  String get settingsFixedReminderTimeTitle => 'Fixed Reminder Time';
 
   @override
   String get settingsFixedReminderTimeDescription =>
-      'Pilih masa yang tetap untuk peringatan';
+      'Pick a fixed time for the reminder';
 
   @override
-  String get settingsAlwaysSendReminderTitle => 'Semtiasa Hantar Peringatan';
+  String get settingsAlwaysSendReminderTitle => 'Always Send Reminder';
 
   @override
   String get settingsAlwaysSendReminderDescription =>
-      'Hantar peringatan walaupun log telah dimulakan';
+      'Send reminder even if a log was already started';
 
   @override
-  String get settingsCustomizeNotificationTitle => 'Sesuaikan Pemberitahuan';
+  String get settingsCustomizeNotificationTitle => 'Customize Notifications';
 
   @override
-  String get settingsTemplatesTitle => 'Templat';
+  String get settingsTemplatesTitle => 'Templates';
 
   @override
-  String get settingsDefaultTemplate => 'Templat Asal';
+  String get settingsDefaultTemplate => 'Default Template';
 
   @override
-  String get manageTemplates => 'Urus Templat';
+  String get manageTemplates => 'Manage Templates';
 
   @override
-  String get addTemplate => 'Tambah Templat';
+  String get addTemplate => 'Add a Template';
 
   @override
   String get newTemplate => 'New Template';
 
   @override
-  String get noTemplateTitle => 'Tiada';
+  String get noTemplateTitle => 'None';
 
   @override
-  String get noTemplatesDescription => 'Tiada templat dicipta…';
+  String get noTemplatesDescription => 'No templates created yet…';
 
   @override
-  String get templateVariableTime => 'Masa';
+  String get templateVariableTime => 'Time';
 
   @override
-  String get templateDefaultTimestampTitle => 'Tanda Masa';
+  String get templateDefaultTimestampTitle => 'Timestamp';
 
   @override
   String templateDefaultTimestampBody(Object date, Object time) {
@@ -372,18 +422,17 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get templateDefaultSummaryTitle => 'Ringkasan Hari';
+  String get templateDefaultSummaryTitle => 'Day Summary';
 
   @override
-  String get templateDefaultSummaryBody =>
-      '### Ringkasan\n- \n\n### Petikan\n> ';
+  String get templateDefaultSummaryBody => '### Summary\n- \n\n### Quote\n> ';
 
   @override
-  String get templateDefaultReflectionTitle => 'Refleksi';
+  String get templateDefaultReflectionTitle => 'Reflection';
 
   @override
   String get templateDefaultReflectionBody =>
-      '### Apakah yang anda nikmati hari ini?\n- \n\n### Apakah yang anda syukuri?\n- \n\n### Apakah yang anda nanti-nantikan?\n- ';
+      '### What did you enjoy about today?\n- \n\n### What are you thankful for?\n- \n\n### What are you looking forward to?\n- ';
 
   @override
   String get settingsTagsTitle => 'Tags';
@@ -581,63 +630,63 @@ class AppLocalizationsMs extends AppLocalizations {
       '## Welcome to Daily You\n\n> Every day is worth remembering, capture it!\n\n**Daily You** is free, [open source](https://github.com/Demizo/Daily_You), and community supported. Built around the belief that your diary should be yours, not a product:\n\n- No ads\n- No locked features\n- No tracking or data collection\n\nWhether you\'re journaling, reflecting, or just noting what made you smile, **Daily You** gives you a private space that\'s _truly your own_.';
 
   @override
-  String get settingsStorageTitle => 'Storan';
+  String get settingsStorageTitle => 'Storage';
 
   @override
-  String get settingsImageQuality => 'Kualiti Imej';
+  String get settingsImageQuality => 'Image Quality';
 
   @override
-  String get imageQualityHigh => 'Tinggi';
+  String get imageQualityHigh => 'High';
 
   @override
-  String get imageQualityMedium => 'Sederhana';
+  String get imageQualityMedium => 'Medium';
 
   @override
-  String get imageQualityLow => 'Rendah';
+  String get imageQualityLow => 'Low';
 
   @override
-  String get imageQualityNoCompression => 'Tiada Pemampatan';
+  String get imageQualityNoCompression => 'No Compression';
 
   @override
-  String get settingsLogFolder => 'Folder Log';
+  String get settingsLogFolder => 'Log Folder';
 
   @override
-  String get settingsImageFolder => 'Folder Imej';
+  String get settingsImageFolder => 'Image Folder';
 
   @override
-  String get warningTitle => 'Amaran';
+  String get warningTitle => 'Warning';
 
   @override
   String get logFolderWarningDescription =>
-      'Jika folder yang dipilih telah mengandungi fail \'daily_you.db\', ia akan digunakan untuk menulis semula log sedia ada anda!';
+      'If the selected folder already contains a \'daily_you.db\' file, it will be used to overwrite your existing logs!';
 
   @override
-  String get errorTitle => 'Ralat';
+  String get errorTitle => 'Error';
 
   @override
-  String get logFolderErrorDescription => 'Gagal menukar folder log!';
+  String get logFolderErrorDescription => 'Failed to change log folder!';
 
   @override
-  String get imageFolderErrorDescription => 'Gagal menukar folder imej!';
+  String get imageFolderErrorDescription => 'Failed to change image folder!';
 
   @override
-  String get backupErrorDescription => 'Gagal mencipta sandaran!';
+  String get backupErrorDescription => 'Failed to create backup!';
 
   @override
-  String get restoreErrorDescription => 'Gagal memulihkan sandaran!';
+  String get restoreErrorDescription => 'Failed to restore backup!';
 
   @override
-  String get settingsBackupRestoreTitle => 'Sandaran & Pemulihan';
+  String get settingsBackupRestoreTitle => 'Backup & Restore';
 
   @override
-  String get settingsBackup => 'Sandarkan';
+  String get settingsBackup => 'Backup';
 
   @override
-  String get settingsRestore => 'Pulihkan';
+  String get settingsRestore => 'Restore';
 
   @override
   String get settingsRestorePromptDescription =>
-      'Memulihkan sandaran akan menulis semula data sedia ada anda!';
+      'Restoring a backup will overwrite your existing data!';
 
   @override
   String get settingsBackupPasswordProtect => 'Password Protect Backups';
@@ -693,17 +742,17 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String tranferStatus(Object percent) {
-    return 'Memindahkan... $percent%';
+    return 'Transferring… $percent%';
   }
 
   @override
   String creatingBackupStatus(Object percent) {
-    return 'Mencipta Sandaran... $percent%';
+    return 'Creating Backup… $percent%';
   }
 
   @override
   String restoringBackupStatus(Object percent) {
-    return 'Memulihkan Sandaran... $percent%';
+    return 'Restoring Backup… $percent%';
   }
 
   @override
@@ -717,7 +766,7 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get cleanUpStatus => 'Membersihkan…';
+  String get cleanUpStatus => 'Cleaning Up…';
 
   @override
   String migratingImagesStatus(Object current, Object total) {
@@ -728,11 +777,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get settingsExport => 'Export';
 
   @override
-  String get settingsExportToAnotherFormat => 'Eksport Kepada Format Lain';
+  String get settingsExportToAnotherFormat => 'Export To Another Format';
 
   @override
   String get settingsExportFormatDescription =>
-      'Ini tidak boleh digunakan sebagai sandaran!';
+      'This should not be used as a backup!';
 
   @override
   String get exportLogs => 'Export Logs';
@@ -744,14 +793,14 @@ class AppLocalizationsMs extends AppLocalizations {
   String get settingsImport => 'Import';
 
   @override
-  String get settingsImportFromAnotherApp => 'Import Daripada Aplikasi Lain';
+  String get settingsImportFromAnotherApp => 'Import From Another App';
 
   @override
   String get settingsTranslateCallToAction =>
-      'Setiap orang harus mempunyai akses kepada jurnal!';
+      'Everyone should have access to a journal!';
 
   @override
-  String get settingsHelpTranslate => 'Bantu Terjemahkan';
+  String get settingsHelpTranslate => 'Help Translate';
 
   @override
   String get importLogs => 'Import Logs';
@@ -760,11 +809,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get importImages => 'Import Images';
 
   @override
-  String get logFormatTitle => 'Pilih Format';
+  String get logFormatTitle => 'Choose Format';
 
   @override
   String get logFormatDescription =>
-      'Format aplikasi lain mungkin tidak menyokong semua ciri. Sila laporkan sebarang isu kerana format pihak ketiga mungkin berubah pada bila-bila masa. Ini tidak akan menjejaskan log sedia ada!';
+      'Another app\'s format may not support all features. Please report any issues since third party formats may change at any time. This will not impact existing logs!';
 
   @override
   String get formatDailyYouJson => 'Daily You (JSON)';
@@ -794,94 +843,94 @@ class AppLocalizationsMs extends AppLocalizations {
   String get formatMarkdown => 'Markdown';
 
   @override
-  String get settingsDeleteAllLogsTitle => 'Padam Semua Log';
+  String get settingsDeleteAllLogsTitle => 'Delete All Logs';
 
   @override
   String get settingsDeleteAllLogsDescription =>
-      'Adakah anda ingin memadam semua log anda?';
+      'Do you want to delete all of your logs?';
 
   @override
   String settingsDeleteAllLogsPrompt(Object prompt) {
-    return 'Masukkan \'$prompt\' untuk meneruskan. Ini tidak dapat dibatalkan!';
+    return 'Enter \'$prompt\' to confirm. This cannot be undone!';
   }
 
   @override
-  String get settingsLanguageTitle => 'Bahasa';
+  String get settingsLanguageTitle => 'Language';
 
   @override
-  String get settingsAppLanguageTitle => 'Bahasa Apl';
+  String get settingsAppLanguageTitle => 'App Language';
 
   @override
-  String get settingsOverrideAppLanguageTitle => 'Bahasa Aplikasi Ganti';
+  String get settingsOverrideAppLanguageTitle => 'Override App Language';
 
   @override
-  String get settingsSecurityTitle => 'Keselamatan';
+  String get settingsSecurityTitle => 'Security';
 
   @override
-  String get settingsSecurityRequirePassword => 'Memerlukan Kata Laluan';
+  String get settingsSecurityRequirePassword => 'Require Password';
 
   @override
-  String get settingsSecurityEnterPassword => 'Masukkan Kata Laluan';
+  String get settingsSecurityEnterPassword => 'Enter Password';
 
   @override
-  String get settingsSecuritySetPassword => 'Tetapkan Kata Laluan';
+  String get settingsSecuritySetPassword => 'Set Password';
 
   @override
-  String get settingsSecurityChangePassword => 'Tukar Kata Laluan';
+  String get settingsSecurityChangePassword => 'Change Password';
 
   @override
-  String get settingsSecurityPassword => 'Kata Laluan';
+  String get settingsSecurityPassword => 'Password';
 
   @override
-  String get settingsSecurityConfirmPassword => 'Sahkan Kata Laluan';
+  String get settingsSecurityConfirmPassword => 'Confirm Password';
 
   @override
-  String get settingsSecurityOldPassword => 'Kata Laluan Lama';
+  String get settingsSecurityOldPassword => 'Old Password';
 
   @override
-  String get settingsSecurityIncorrectPassword => 'Kata Laluan Salah';
+  String get settingsSecurityIncorrectPassword => 'Incorrect Password';
 
   @override
-  String get settingsSecurityPasswordsDoNotMatch => 'Kata laluan tidak sepadan';
+  String get settingsSecurityPasswordsDoNotMatch => 'Passwords do not match';
 
   @override
-  String get requiredPrompt => 'Diperlukan';
+  String get requiredPrompt => 'Required';
 
   @override
-  String get settingsSecurityBiometricUnlock => 'Buka Kunci Biometrik';
+  String get settingsSecurityBiometricUnlock => 'Biometric Unlock';
 
   @override
-  String get unlockAppPrompt => 'Buka kunci apl';
+  String get unlockAppPrompt => 'Unlock the app';
 
   @override
-  String get settingsAboutTitle => 'Tentang';
+  String get settingsAboutTitle => 'About';
 
   @override
-  String get settingsVersion => 'Versi';
+  String get settingsVersion => 'Version';
 
   @override
-  String get settingsLicense => 'Lesen';
+  String get settingsLicense => 'License';
 
   @override
   String get licenseGPLv3 => 'GPL-3.0';
 
   @override
-  String get settingsSourceCode => 'Kod Sumber';
+  String get settingsSourceCode => 'Source Code';
 
   @override
   String get settingsOpenSourceLicenses => 'Open Source Licenses';
 
   @override
-  String get settingsMadeWithLove => 'Dibuat dengan ❤️';
+  String get settingsMadeWithLove => 'Made with ❤️';
 
   @override
-  String get settingsConsiderSupporting => 'pertimbangkan untuk menyokong';
+  String get settingsConsiderSupporting => 'consider supporting';
 
   @override
   String get imagesTitle => 'Images';
 
   @override
-  String get tagMoodTitle => 'Suasana';
+  String get tagMoodTitle => 'Mood';
 
   @override
   String get calendarTagDisplayLabel => 'Tag';

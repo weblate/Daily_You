@@ -18,19 +18,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get dailyReminderDescription => 'Schrijf je dagelijkse log…';
 
   @override
-  String get actionTakePhoto => 'Take photo';
+  String get actionTakePhoto => 'Trek foto';
 
   @override
-  String get actionToday => 'Today';
+  String get actionToday => 'Vandaag';
 
   @override
-  String get actionOtherDay => 'Other day';
+  String get actionOtherDay => 'Andere dag';
 
   @override
   String get pageHomeTitle => 'Start';
 
   @override
-  String get jumpToMonthTitle => 'Jump to month';
+  String get jumpToMonthTitle => 'Spring naar maand';
 
   @override
   String get jumpToLogTitle => 'Jump to log';

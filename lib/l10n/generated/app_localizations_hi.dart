@@ -33,7 +33,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get jumpToMonthTitle => 'महीने पर जाएं';
 
   @override
-  String get jumpToLogTitle => 'Jump to log';
+  String get jumpToLogTitle => 'लॉग पर जाएं';
 
   @override
   String get flashbacksTitle => 'फ्लैशबैक्स';
