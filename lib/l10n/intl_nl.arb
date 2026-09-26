@@ -129,5 +129,9 @@
     "settingsMadeWithLove": "Gemaakt met ❤️",
     "settingsConsiderSupporting": "overweeg te ondersteunen",
     "tagMoodTitle": "Humeur",
-    "viewLayoutGrid": "Raster"
+    "viewLayoutGrid": "Raster",
+    "actionTakePhoto": "Trek foto",
+    "actionToday": "Vandaag",
+    "actionOtherDay": "Andere dag",
+    "jumpToMonthTitle": "Spring naar maand"
 }
