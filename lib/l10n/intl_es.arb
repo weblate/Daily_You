@@ -247,7 +247,6 @@
     "backupEncryptedContent": "Este respaldo está protegido por una contraseña.",
     "settingsAutoBackup": "Respaldos automáticos",
     "settingsAutoBackupLocation": "Ubicación del respaldo",
-    "settingsAutoBackupTime": "Hora a la que respaldar",
     "settingsAutoBackupInterval": "Frecuencia de los respaldos",
     "settingsAutoBackupIntervalDaily": "Diario",
     "settingsAutoBackupIntervalWeekly": "Semanal",
@@ -257,7 +256,6 @@
     "settingsBackupNever": "Nunca se ha respaldado",
     "settingsAutoBackupNext": "Próximo respaldo {time}",
     "settingsAutoBackupKeepAll": "Todo",
-    "autoBackupProgressTitle": "Creando respaldo…",
     "autoBackupFailedTitle": "Respaldo fallido",
     "settingsOpenSourceLicenses": "Licencias de código abierto"
 }

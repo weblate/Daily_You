@@ -247,7 +247,6 @@
     "backupEncryptedContent": "此備份受密碼保護。",
     "settingsAutoBackup": "自動備份",
     "settingsAutoBackupLocation": "備份位置",
-    "settingsAutoBackupTime": "備份時間",
     "settingsAutoBackupInterval": "備份間隔",
     "settingsAutoBackupIntervalDaily": "每日",
     "settingsAutoBackupIntervalWeekly": "每週",
@@ -257,7 +256,6 @@
     "settingsBackupNever": "從未備份過",
     "settingsAutoBackupNext": "下次備份 {time}",
     "settingsAutoBackupKeepAll": "全部",
-    "autoBackupProgressTitle": "備份中…",
     "autoBackupFailedTitle": "備份失敗",
     "settingsOpenSourceLicenses": "開源授權條款"
 }

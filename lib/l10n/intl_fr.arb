@@ -246,7 +246,6 @@
     "backupEncryptedContent": "Cette sauvegarde est protégée par mot de passe.",
     "settingsAutoBackup": "Sauvegardes automatiques",
     "settingsAutoBackupLocation": "Emplacement de sauvegarde",
-    "settingsAutoBackupTime": "Horaire de sauvegarde",
     "settingsAutoBackupInterval": "Intervalle de sauvegarde",
     "settingsAutoBackupIntervalDaily": "Quotidienne",
     "settingsAutoBackupIntervalWeekly": "Hebdomadaire",
@@ -256,7 +255,6 @@
     "settingsBackupNever": "Jamais sauvegardé",
     "settingsAutoBackupNext": "Prochaine sauvegarde {time}",
     "settingsAutoBackupKeepAll": "Toutes",
-    "autoBackupProgressTitle": "Sauvegarde…",
     "autoBackupFailedTitle": "Échec de la sauvegarde",
     "settingsOpenSourceLicenses": "Licences Open Source"
 }
